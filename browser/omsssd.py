@@ -1,7 +1,5 @@
 #! /usr/bin/env python3
 
-#1.5.5a
-
 # sudo pacman -S --needed pyqt5
 
 #from PyQt5.QtCore import *
@@ -16,9 +14,10 @@ from PyQt5.QtGui import QIcon,QKeySequence
 #from PyQt5.QtWebEngineWidgets import *
 from PyQt5.QtWebEngineWidgets import QWebEngineView,QWebEngineSettings
 
-
 import sys
 import os
+
+HERE = os.path.dirname(__file__) + '/'
 
 def rais(text):
     try:
@@ -73,7 +72,7 @@ def getSettingInt(setname):
     return getSettingSize(1,setname)[0]
 
 def getIco(iconame):
-    return QIcon('ico/%s'%(iconame))
+    return QIcon(f'{HERE}ico/{iconame}')
 
 class Browser(QWebEngineView):
     def createWindow(self,mode):
@@ -195,9 +194,8 @@ class MainWindow(QMainWindow):
         if key == 16777268:#F5
             self.reload_btn_pressed()
         else:
-            print('===')
-            print(key)
-        
+            print(f'pressed key: {key}')
+
 
     def set_page_zoom(self,num):
         self.get_cur_tab().page().setZoomFactor(num)
