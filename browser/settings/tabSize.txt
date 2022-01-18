@@ -1,0 +1,4 @@
+140,20
+kolko pixela iskash da ti e golqm taba
+LEGENDA:
+	razmer x,razmer y

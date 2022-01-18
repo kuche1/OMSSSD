@@ -1,0 +1,4 @@
+50,50,1000,500
+kade na ekrana da ti se poqvqva i kolko da e golqmo lainoto
+LEGENDA:
+	x,y,duljina x,duljina y

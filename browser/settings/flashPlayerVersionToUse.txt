@@ -1,0 +1,3 @@
+28.0.0.161
+koq versiq na flash player-a iskash da ispolzvash? (v slu4ai 4e preebat po-novite versii)
+default: 28.0.0.161
